@@ -1,0 +1,28 @@
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Juan Tombe",
+    "age":20,
+    "email":"tombe@gmail.com"
+}
+
+###
+GET http://localhost:3000/api/users HTTP/1.1
+
+###
+GET http://localhost:3000/api/users/655cf67ddaf65ab536c015a0 HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/users/655d3bbd4d420858b5892c1e HTTP/1.1
+
+###
+PUT http://localhost:3000/api/users/655cf67ddaf65ab536c015a0 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Juan Tombé",
+    "age":20,
+    "email":"juantombe@gmail.com"
+}
